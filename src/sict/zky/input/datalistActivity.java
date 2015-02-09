@@ -28,7 +28,7 @@ public class datalistActivity extends Activity {
 		pc_dataService = new Pc_dataService(getApplicationContext());
 		pc_bgdataservice = new Pc_bgdataService(getApplicationContext());
 //		listView = (ListView) this.findViewById(R.id.uploaddata_listview);
-		show();//add
+		show();//adddddddd
 	}
 	
 	
@@ -46,7 +46,7 @@ public class datalistActivity extends Activity {
 		TestinAgent.onStop(this);
 	}
 
-	private void show() {// ��ʽ���
+	private void show() {// 锟斤拷式锟斤拷锟�
 		List<Pc_data> pc_datas = pc_dataService.selectAll();
 
 		List<HashMap<String, Object>> data = new ArrayList<HashMap<String, Object>>();
