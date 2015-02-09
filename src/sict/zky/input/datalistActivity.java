@@ -28,7 +28,7 @@ public class datalistActivity extends Activity {
 		pc_dataService = new Pc_dataService(getApplicationContext());
 		pc_bgdataservice = new Pc_bgdataService(getApplicationContext());
 //		listView = (ListView) this.findViewById(R.id.uploaddata_listview);
-		show();//adddddddd
+		show();//add
 	}
 	
 	
