@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0062C2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/curve_user_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="时间范围:"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/userdatacurve_timerange_spinner"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 用于显示折线图的地方，在.java中添加了achartengine中的GraphicalView -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#95daf2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/container3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/container4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

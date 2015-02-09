@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbg2"
+    android:orientation="vertical"
+    tools:context="sict.zky.main.LoginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@drawable/bg"
+        android:padding="15dip" >
+
+        <!-- 账号 -->
+
+        <TextView
+            android:id="@+id/login_user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_label_username"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_user_input"
+            android:inputType="text"
+            android:singleLine="true" 
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+        <!-- 密码 text -->
+
+        <TextView
+            android:id="@+id/login_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_edit"
+            android:layout_marginTop="3dp"
+            android:text="@string/login_label_password" 
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" 
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/signin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_edit"
+            android:background="@drawable/login_normal"
+            android:onClick="login" 
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

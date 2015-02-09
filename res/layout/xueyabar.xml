@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_main_tab_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    >
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/id_tab_top_gaoya"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_tab_top_gaoya"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#0000"
+                android:clickable="false"
+               android:text="高压"
+                android:textSize="20.0dip"
+                 />
+
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_top_diya"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/btn_tab_top_diya"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#0000"
+                android:clickable="false"
+                android:text="低压"
+                 android:textSize="20.0dip"/>
+
+             
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_top_maibo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+
+            <Button
+                android:id="@+id/btn_tab_top_maibo"
+               android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#0000"
+                android:clickable="false"
+               android:text="脉搏"
+               android:textSize="20.0dip" />
+
+            
+        </LinearLayout>
+</LinearLayout>
+        
+</RelativeLayout>

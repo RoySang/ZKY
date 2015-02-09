@@ -1,0 +1,376 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="UselessParent" >
+
+    <LinearLayout
+        android:id="@+id/CAO"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#0062C2"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#FFFFFF"
+            android:textSize="25.0dip" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/settings_reminder_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_list_clock" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/my_reminder"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+
+            </LinearLayout>
+
+           
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_mymessage_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mymessageimage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_list_message" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:layout_weight="1"
+                   android:text="@string/mymessage"
+                   android:textColor="#000000"
+                   android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_deviceinformation_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_list_info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/shebeihelp"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_healthknowledge_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/healthknowledge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/health_knowledge"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_greenchannel_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_list_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/greenchannel"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_aboutus_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_list_aboutus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="关于我们"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_checkupdate_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_list_updata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="检查更新"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_helpdocument_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_list_help" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/help_document"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/more2" />
+                
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:id="@+id/settings_exit_layout"
+                android:layout_width="288dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/exit"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

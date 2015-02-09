@@ -1,0 +1,318 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="UselessParent" >
+
+    <LinearLayout
+        android:id="@+id/CAO1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#0062C2"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#000000"
+            android:textSize="25.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/visitor_settings_reminder_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_list_clock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/my_reminder"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/more2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#c6c6c6" />
+    <!--
+    <LinearLayout
+        android:id="@+id/settings_bindingdevice_layout"
+        android:layout_width="fill_parent"
+         android:layout_height="55dp"
+        
+        android:background="@drawable/text_view_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+      <ImageView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            
+            
+            android:layout_marginLeft="5dp"
+           android:src="@drawable/ic_list_bt"
+           
+            />
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="2.0"
+            android:text="@string/binding_bt_device"
+            android:textSize="16.0dip"
+            android:textColor="#000000" 
+             android:layout_gravity="center"/>
+         <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.50"
+            android:src="@drawable/more2" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/visitor_settings_deviceinformation_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_list_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/shebeihelp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/more2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#c6c6c6" />
+
+    <LinearLayout
+        android:id="@+id/visitor_settings_healthknowledge_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/healthknowledge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/health_knowledge"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/more2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#c6c6c6" />
+
+    <LinearLayout
+        android:id="@+id/visitor_settings_aboutus_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_list_aboutus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="关于我们"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/more2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#c6c6c6" />
+
+    <LinearLayout
+        android:id="@+id/visitor_settings_checkupdate_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_list_updata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="检查更新"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/more2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#c6c6c6" />
+
+    <LinearLayout
+        android:id="@+id/visitor_settings_helpdocument_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_list_help" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/help_document"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/more2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#c6c6c6" />
+
+    <LinearLayout
+        android:id="@+id/settings_login_layout"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/login"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+</LinearLayout>

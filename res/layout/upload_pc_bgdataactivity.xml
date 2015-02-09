@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="用户名:"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/pc_bgdata_username_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="2" 
+            android:layout_marginRight="20dp"
+            android:background="#0062C2">
+
+            <TextView
+                android:id="@+id/pc_bgdata_username_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/pc_bgdata_username_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="时间段:"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/pc_bgdata_time_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="2" 
+            android:layout_marginRight="20dp"
+            android:background="#0062C2">
+
+            <TextView
+                android:id="@+id/pc_bgdata_time_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/pc_bgdata_time_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="血糖:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/upload_bloodGlucose"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="mmol/L"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/tianjia"
+            android:onClick="uploadpc_bgdata" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/fanhui"
+            android:onClick="forreturn" />
+    </LinearLayout>
+
+</LinearLayout>

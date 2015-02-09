@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#0062C2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/z" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="        中科慧康健康管理系统由中科政平联合中科院沈阳计算技术研究所有限公司研发：由硬件端（触点层）、APP、云服务端、客户端、医学专家和就医绿色通道五大模块构成。用户每次采集的健康数据直接即时上传至云数据系统，数据将无限存储并由内置医学模型做出预判，医学专家对预判结果风险评估并作出预警提示即时或延时发送至电脑、手机APP等显示终端。方便随时监控患者病情，并提出相应的亚健康调整或简单的治疗方案，并进行初步上门服务。病情严重的将通过专用绿色通道直接进入所在区域的专业医疗机构直至国内与用户疾病所对应的最专业的医疗机构进行治疗。可以为健康城市建设、企事业单位、社区家庭、个人提供专业的健康管理技术、产品和服务。"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D20808" />
+            
+            <TextView
+                android:id="@+id/clientId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D20808" 
+                android:text="none"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#0062C2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/datacurve_username_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/datacurve_username_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/datacurve_username_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/datacurve_timerange_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/datacurve_timerange_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/datacurve_timerange_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/datacurve_ciortime_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/datacurve_ciortime_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/datacurve_ciortime_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 用于显示折线图的地方，在.java中添加了achartengine中的GraphicalView -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#95daf2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/container1"
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

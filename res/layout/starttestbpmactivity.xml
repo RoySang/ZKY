@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="当前用户："
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/starttestbpm_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/showconnection"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/SYSView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="高压     000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/DIAView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="低压     000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/PULSEView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="脉搏     000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/GLUView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <sict.zky.utils.VerticalProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="60sp"
+                android:layout_height="220sp"
+                android:layout_gravity="center"
+                android:progressDrawable="@drawable/progress" />
+
+            <TextView
+                android:id="@+id/processPluseView"
+                android:layout_width="fill_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="000"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+ 
+
+    <ImageView
+        android:id="@+id/level_image"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/color" />
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#0062C2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/datacurve_pressure_username_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/datacurve_pressure_username_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/datacurve_pressure_username_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/datacurve_pressure_timerange_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/datacurve_pressure_timerange_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/datacurve_pressure_timerange_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/datacurve_pressure_ciortime_linear"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/datacurve_pressure_ciortime_textView"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/datacurve_pressure_ciortime_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/xueyabar" />
+
+    <FrameLayout
+        android:id="@+id/id_content1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <!--
+   <android.support.v4.view.ViewPager
+      android:id="@+id/viewpager"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" />
+      
+    -->
+
+</LinearLayout>
