@@ -14,7 +14,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-
+// test
 public class datalistActivity extends Activity {
 	private ListView listView;
 	private Pc_dataService pc_dataService;
@@ -46,7 +46,7 @@ public class datalistActivity extends Activity {
 		TestinAgent.onStop(this);
 	}
 
-	private void show() {// ÏÔÊ½Êý¾Ý
+	private void show() {// ï¿½ï¿½Ê½ï¿½ï¿½ï¿½
 		List<Pc_data> pc_datas = pc_dataService.selectAll();
 
 		List<HashMap<String, Object>> data = new ArrayList<HashMap<String, Object>>();
